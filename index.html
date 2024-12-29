@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario al cliente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/favicon.jpg" type="image/png">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="gradient"></div>
+        <div class="background"></div>
+    
+        <header class="encabezado">
+            <h1 id="title" class="texto-centrado">Gimnasio MT</h1>
+            <p id="description" class="texto-centrado descripcion">Bienvenido a nuestro formulario de satisfaccion al cliente !</p>
+        </header>
+        <form id="survey-form"> 
+            <section class="secciones-formulario">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" id="name" required placeholder="Ingresa tu nombre">
+    
+                <label for="email" id="email-label">Correo Electronico</label>
+                <input type="email" id="email" required placeholder="Ingresa tu correo">
+    
+                <label for="number" id="number-label">Edad<span>(opcional)</span></label>
+                <input type="number" id="number" min="10" max="80" placeholder="Edad">
+            </section>
+    
+            <section class="secciones-formulario">
+                <p class="texto">Como te enteraste de nuestra pagina web?</p>
+                <select id="dropdown">
+                    <option value="0" disabled selected>Seleccione una opcion</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Instagram</option>
+                </select>
+            </section>
+    
+            <section class="secciones-formulario">
+                <p class="texto">¿Recomedarias nuestra gimnasio?</p>
+                <label for="afirmativo" class="label-radio-checkbox">
+                <input type="radio" id="afirmativo" name="recommend" class="input-radio-checkbox" value="si"><span>Si</span>
+                </label>
+                <label for="negativo" class="label-radio-checkbox">
+                <input type="radio" id="negativo" name="recommend" class="input-radio-checkbox" value="no">No
+                </label>
+            </section>
+    
+            <section class="secciones-formulario">
+                <p class="texto">Ejercicios Preferidos</p>
+                <label class="label-radio-checkbox">
+                    <input type="checkbox" name="recommendations" value="Press-Banca" class="input-radio-checkbox">Press Banca
+                </label>
+                <label class="label-radio-checkbox">
+                    <input type="checkbox" name="recommendations" value="Sentadilla-Hack" class="input-radio-checkbox">Sentadilla Hack
+                </label>
+                <label class="label-radio-checkbox">
+                    <input type="checkbox" name="recommendations" value="Extensiones-Cuadriceps" class="input-radio-checkbox">Extensiones de Cuadriceps
+                </label>
+                <label class="label-radio-checkbox">
+                    <input type="checkbox" name="recommendations" value="Press-Militar" class="input-radio-checkbox">Press Militar
+                </label>
+                <label class="label-radio-checkbox">
+                    <input type="checkbox" name="recommendations" value="Otro" class="input-radio-checkbox">Otro
+                </label>
+            </section>
+    
+            <section class="secciones-formulario">
+                <p class="texto">¿Sugerencias para seguir mejorando?</p>
+                <textarea name="comentarios" id="comentarios" placeholder="Ingresa tu comentario" rows="5"></textarea>
+            </section>
+    
+            <section class="secciones-formulario">
+                <input type="submit" id="submit">
+            </section>
+        </form>
+    
+    </div>
+</body>
+</html>

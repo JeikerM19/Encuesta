@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #dee4ea;
+}
+.contenedor {
+    width: 60%;
+    margin: 3em auto;
+}
+.encabezado {
+    padding: 0 0.5em;
+    margin-bottom: 2em;
+}
+.texto-centrado {
+    text-align: center;
+    font-weight: bold;
+}
+.descripcion {
+    font-weight: 200;
+    font-style: italic;
+}
+form {
+    background-color: #5c6d80cc;
+    border-radius: 0.7em;
+    padding: 2em;
+    box-shadow: 0 0 45px 0 #2c3a4baa;
+}
+.secciones-formulario {
+    margin-bottom: 0.10em;
+    padding: 0.10em;
+}
+input, select, textarea {
+    width: 100%;
+    border-radius: 0.25em;
+    border: 1px solid #5c6d80cc;
+    background-color: #abda;
+    color: #effa;
+}
+option {
+    background-color: #5c6d80aa;
+    color: #effa;
+}
+
+::placeholder {
+    color: #effa;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.25em;
+}
+.texto {
+    margin-bottom: 0.25em;
+}
+span {
+    margin-left: 0.3em;
+    font-size: 0.7em;
+}
+input, select {
+    margin-bottom: 1em;
+    padding: 0.20em;
+    height: 2em;
+}
+.label-radio-checkbox {
+    display: block;
+}
+.input-radio-checkbox {
+    width: unset;
+    height: unset;
+    min-width: 0.75em;
+    min-height: 0.75em;
+    margin: 0 0.50em 0.75em 0;
+}
+input[type="submit"]{
+    margin-top: 2em;
+    background-color: #234e;
+    color: #accd;
+    cursor: pointer;
+    box-shadow: 0 0 30px 0 #234c;
+}
+.gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#2c3a4baa, #5c6d80aa);
+}
+.background { 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: -2;
+    height: 100%; 
+    width: 100%; 
+    background: url('imagenes/gym.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
